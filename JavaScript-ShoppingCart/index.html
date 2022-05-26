@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Final Project - Shopping Cart</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h2>Product</h2>
+    
+    <div class="grid">
+
+
+        <div class="item"> 
+            <img  class = "image" src="./images/commanderlegends.jpg" alt="dumbell"></img>  
+          <div class = "txt">
+            <strong>
+            <br>MTG: Commander Legends
+            <br>$117.01
+            </strong>
+            <br><button data-id ="MTG: Commander Legends" data-price= "117.01">Add to cart</button>
+          </div>
+            
+        </div>
+
+        <div class="item">  
+            <img class = "image" src="./images/innistrad.jpg" alt="treadmill"></img>
+          <div class = "txt"> 
+          <strong>
+          <br>MTG: Crimson Vow
+          <br>$108.95
+          </strong>
+          <br><button data-id ="MTG: Crimson Vow" data-price= "108.95">Add to cart</button>
+          </div>
+        
+        
+        </div>
+    
+        <div class="item">  
+          <img class = "image" src="./images/strixhaven.jpg" alt="bench"></img>
+         
+          <div class="txt"> 
+          <strong>
+          <br>MTG: StrixHaven
+          <br>$95.12
+          </strong>
+          <br><button data-id ="MTG: StrixHaven" data-price= "95.12">Add to cart</button>
+          </div>
+
+        </div>
+    
+        <div class="item" >
+          <img class = "image" src="./images/newcapenna.jpg" alt="jumprope"></img>
+          
+          <div class="txt">
+          <strong>
+          <br>MTG: New Capenna
+          <br>$99.95
+          </strong>
+          <br><button data-id ="MTG: New Capenna" data-price= "99.95">Add to cart</button>
+          </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    
+    <h2>Shopping Cart</h2>
+<section class ="ShoppingCart">
+
+
+
+  <div class ="details">
+    
+    <div class= "detailHeader">
+      <p>Item </p>
+        
+      <p>Price</p>
+      <p>Quantity</p>
+      <p>Subtotal</p>
+    </div>
+
+    
+    
+
+  </div>
+
+  <div class = "sum">
+    <strong> Summary </strong>
+    <p class ="totalItems">0 items in your cart</p>
+    <p class = "total">Total: $0</p>    
+  </div>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+  </body>
+ 
+  <script src="./index.js"></script>
+</html>
+
+<!--
+
+
+<div class ="cartItem" >
+<p>Commander Legends</p>
+<p>117.01</p>
+<input type="number" min ="1" data-id="commanderlegends" placeholder="1"/>
+<p class = "Subtotal" data-id ="">subtotal temp</p>
+<button>Remove</button>
+</div>
+
+
+<div class ="cartItem" data-id ="MTG: Commander Legends">
+      <p>MTG: Commander Legends</p>
+      <p>117.01</p>
+      <input type="number" min ="1" data-id="MTG: Commander Legends" placeholder="1"/>
+      <p class = "Subtotal" data-id ="MTG: Commander Legends">subtotal temp</p>
+      <button data-id ="MTG: Commander Legends">Remove</button>
+      </div>
+   
+
+-->

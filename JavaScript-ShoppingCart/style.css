@@ -1,0 +1,138 @@
+h2 {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.grid {
+  --sq: 200px;
+
+  position: center;
+  box-sizing: border-box;
+  padding: 16px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 200px);
+  grid-auto-rows: var(--sq);
+  gap: 10px;
+  justify-content: center;
+}
+
+.image {
+  max-width: 50%;
+  max-height: 50%;
+  object-fit: cover;
+}
+.item {
+  width: var(--sq);
+  height: var(--sq);
+  border: 1px solid black;
+
+  text-align: center;
+  padding-top: 5px;
+}
+
+.txt {
+  position: relative;
+  top: 10px;
+}
+
+.sum {
+  box-sizing: border-box;
+  width: 250px;
+  height: auto;
+  border: 1px solid black;
+  align-items: flex-end;
+  text-align: center;
+  padding-top: 5px;
+}
+.sum p {
+  padding: 5px;
+}
+.cat {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.ShoppingCart {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-right: 5px;
+  gap: 10px;
+}
+
+.details {
+  padding-right: 5px;
+  height: 50px;
+
+  display: flex;
+  flex-direction: column;
+  flex: 0.7;
+}
+
+.detailHeader {
+  display: grid;
+  height: 35px;
+  grid-template-columns: repeat(4, 150px);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-left: 10px;
+}
+.detailHeader p {
+  margin-top: 10px;
+}
+
+.cartItem {
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  border-bottom: 1px solid black;
+}
+.cartItem input {
+  max-width: 80px;
+  max-height: 25px;
+  margin-top: 12px;
+  margin-left: -5px;
+}
+.cartItem button {
+  width: 70px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.cartItem p {
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 840px) {
+  h2 {
+    width: 400px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 200px);
+  }
+  .ShoppingCart {
+    position: relative;
+    flex-direction: column;
+  }
+  .sum {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  h2 {
+    width: 200px;
+  }
+  .grid {
+    grid-template-columns: repeat(1, 200px);
+  }
+
+  .detailHeader {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+  }
+  .cartItem {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+  }
+}
