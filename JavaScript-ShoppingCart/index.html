@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h2>Product</h2>
-    
+    <h2>Products</h2>
+
+    <!--Container for the items-->
     <div class="grid">
 
-
-        <div class="item"> 
+        <div class="item"> <!--Container for indivdual item-->
             <img  class = "image" src="./images/commanderlegends.jpg" alt="dumbell"></img>  
           <div class = "txt">
             <strong>
@@ -22,7 +22,6 @@
             </strong>
             <br><button data-id ="MTG: Commander Legends" data-price= "117.01">Add to cart</button>
           </div>
-            
         </div>
 
         <div class="item">  
@@ -34,8 +33,6 @@
           </strong>
           <br><button data-id ="MTG: Crimson Vow" data-price= "108.95">Add to cart</button>
           </div>
-        
-        
         </div>
     
         <div class="item">  
@@ -48,20 +45,17 @@
           </strong>
           <br><button data-id ="MTG: StrixHaven" data-price= "95.12">Add to cart</button>
           </div>
-
         </div>
     
         <div class="item" >
           <img class = "image" src="./images/newcapenna.jpg" alt="jumprope"></img>
-          
           <div class="txt">
           <strong>
           <br>MTG: New Capenna
           <br>$99.95
           </strong>
           <br><button data-id ="MTG: New Capenna" data-price= "99.95">Add to cart</button>
-          </div>
-
+        </div>
         </div>
 
     </div>
@@ -72,12 +66,10 @@
 
     
     <h2>Shopping Cart</h2>
+    <!--Container for the Cart & Summary-->
 <section class ="ShoppingCart">
 
-
-
-  <div class ="details">
-    
+  <div class ="details"> <!--Container for the Cart-->
     <div class= "detailHeader">
       <p>Item </p>
         
@@ -86,36 +78,26 @@
       <p>Subtotal</p>
     </div>
 
-    
-    
-
   </div>
 
-  <div class = "sum">
+
+  <div class = "sum"><!--Container for the Summary-->
     <strong> Summary </strong>
     <p class ="totalItems">0 items in your cart</p>
     <p class = "total">Total: $0</p>    
   </div>
 
-
-
-
-
 </section>
-
-
-
-
-
-
 
   </body>
  
   <script src="./index.js"></script>
 </html>
 
-<!--
 
+
+<!--
+************Template for JS items*****************
 
 <div class ="cartItem" >
 <p>Commander Legends</p>

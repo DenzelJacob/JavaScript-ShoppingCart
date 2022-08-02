@@ -1,8 +1,10 @@
+
 h2 {
   width: 800px;
   margin: 0 auto;
 }
 
+/* container for the items */
 .grid {
   --sq: 200px;
 
@@ -18,6 +20,8 @@ h2 {
   justify-content: center;
 }
 
+
+/*item styling*/
 .image {
   max-width: 50%;
   max-height: 50%;
@@ -31,12 +35,13 @@ h2 {
   text-align: center;
   padding-top: 5px;
 }
-
 .txt {
   position: relative;
   top: 10px;
 }
 
+
+/*summary container*/
 .sum {
   box-sizing: border-box;
   width: 250px;
@@ -49,10 +54,12 @@ h2 {
 .sum p {
   padding: 5px;
 }
-.cat {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
+
+
+
+
+
+/* Shopping cart container */
 .ShoppingCart {
   width: 800px;
   margin: 0 auto;
@@ -62,6 +69,8 @@ h2 {
   gap: 10px;
 }
 
+
+/* Shopping cart header styling */
 .details {
   padding-right: 5px;
   height: 50px;
@@ -83,6 +92,8 @@ h2 {
   margin-top: 10px;
 }
 
+
+/* cart item styling */
 .cartItem {
   display: grid;
   grid-template-columns: repeat(4, 150px);
@@ -103,6 +114,8 @@ h2 {
   padding-left: 10px;
 }
 
+
+/* tablet screen size */
 @media screen and (max-width: 840px) {
   h2 {
     width: 400px;
@@ -119,6 +132,8 @@ h2 {
   }
 }
 
+
+/* mobile screen size */
 @media screen and (max-width: 520px) {
   h2 {
     width: 200px;
